@@ -1,0 +1,24 @@
+Softwarekonzept – Ausgabensoftware
+
+Ziel:
+Die Anwendung ermöglicht es, gemeinsame Ausgaben (z. B. in einer WG, bei Reisen oder Events)
+transparent zu erfassen, Nutzern zuzuordnen und übersichtlich darzustellen.
+
+Hauptfunktionen:
+• Ausgabenverwaltung: Neue Ausgaben mit Betrag, Beschreibung, Datum. Quick-Button
+„Heute“ für Datumsauswahl. Bearbeiten & Löschen (nur im Admin-Modus).
+• Dashboard: Übersicht aller Ausgaben, gruppiert nach Nutzer. Summen pro Person.
+Diagramm (Balkendiagramm via recharts). Filter nach Nutzer und Zeitraum. Automatischer
+Darkmode nach Systemeinstellung.
+• Admin-Modus (PIN-geschützt): Aktivierung über 4-stellige PIN (oben rechts). Schaltet
+Bearbeiten-/Löschen-Funktionen frei.
+• Nutzerverwaltung: Nutzer anlegen mit Name, Telefon, E-Mail. Bearbeiten & Löschen (nur
+im Admin-Modus).
+
+Technik:
+• Framework: Next.js (Pages Router, TypeScript)
+• Styling: eigenes CSS mit Variablen, Flexbox, Grid, Darkmode (prefers-color-scheme)
+• Diagramme: recharts
+• Backend: Next.js API-Routen (GET, POST, PUT, DELETE)
+• Datenbank: SQLite über Prisma ORM
+• Rendering: Kombination aus SSR (getServerSideProps) und CSR (Formulare, API-Calls)
